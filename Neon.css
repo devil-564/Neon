@@ -1,0 +1,81 @@
+body{
+    margin: 11.3%;
+    padding: 5%;
+    background-color: black;
+    border-width: 4px;
+    border-style: dotted;
+    border-color: rgb(255, 21, 196);
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+#glow{
+    color: rgb(255, 176, 189);
+}
+
+.boxes{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+button{
+    width: 70px;
+    height: 50px;
+    color: white;
+    background-color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#box1:hover{
+    /* background-color: red; */
+    /* color: black; */
+     box-shadow: 0 0 5px red, 0 0 25px red, 0 0 50px red, 0 0 200px red; 
+     -webkit-box-reflect:  1px linear-gradient(transparent, #0005); 
+    animation-name: example1;
+    animation-duration: 2.5s;
+    /* animation: infinite; */
+}
+
+#box2:hover{
+    background-color: rgba(255, 255, 0, 0.863);
+    /* color: black; */
+     box-shadow: 0 0 5px yellow, 0 0 25px yellow, 0 0 50px yellow, 0 0 200px yellow; 
+     -webkit-box-reflect: 1px linear-gradient(transparent, #0005); 
+   animation-name: example2;
+   animation-duration: 2.5s;
+   /* animation: infinite; */
+}
+#box3:hover{
+    background-color: rgba(7, 241, 7, 0.747);
+    /* color: black; */
+    box-shadow: 0 0 5px rgba(7, 241, 7, 0.747), 0 0 25px rgba(7, 241, 7, 0.747), 0 0 50px rgba(7, 241, 7, 0.747), 0 0 200px rgba(7, 241, 7, 0.747);
+    -webkit-box-reflect: 1px linear-gradient(transparent, #0005);
+    animation-name: example3;
+    animation-duration: 2.5s;
+    /* animation: infinite; */
+}
+
+@keyframes example1 {
+    from{background-color : rgb(0, 0, 0)}
+    to {background-color: red};
+}
+
+@keyframes example2 {
+    from{background-color : rgb(0, 0, 0)}
+    to {background-color: yellow};
+}
+
+@keyframes example3 {
+    from{background-color : rgb(0, 0, 0)}
+    to {background-color: rgba(7, 241, 7, 0.747)};
+}
+
+@media screen and (max-width: 243px){
+    body {
+            border-style: none;
+         }
+}
